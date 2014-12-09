@@ -1,0 +1,95 @@
+﻿@media all and (max-width:320px){/*5s*/ 
+
+.sign:nth-of-type(4){left:70%;top:0;}/*问路*/
+.sign:nth-of-type(6){left:28%;top:170px}/*来信*/
+    .shuye1{top:1%;}
+    .water{top:45%;}
+    .shuye4{top:45%;}   
+    #xuyan h1{height:28px;}
+    #xuyan p{font-size:16px;}
+     #c1{margin-top:0;}
+    #hannue .first{display:-webkit-box;width:90%;margin:0 auto;margin-top:0px;}
+    #hannue .first p:nth-of-type(1){background:#f90;color:#fff;padding:2px;border-radius:1px;width:20px;height:20px;margin-top:0px;line-height:20px;}
+    #hannue .first p:nth-of-type(2){text-align:left;width:90%;margin:0 auto;line-height:20px;}
+    #hannue .b_text{text-align:left;width:90%;text-indent:2em;margin:25px auto 0;}
+    .block5 .b_text{line-height:19px;}
+    .block7 p{line-height:24px;top:8px;}
+    .block7 h1{height:20px;}
+    .block1>h1{height:20px;}
+    .block1 .b_text{line-height:25px;margin-top:20px;}
+     
+    .block2 h1{height:10px;}
+     .block2 .b_text{line-height:22px;}
+    /*往事*/
+    #wangshi ul li p{line-height:24px;}
+    #wangshi_c3{margin-top:20px;}
+    .wangshi_block5 img{position:relative;top:-20px;}
+    .wangshi_block6 h3{top:10px;}
+    .wangshi_block6 h4{height:0px;}
+    .wangshi_block6 p{font-size:12px;}
+
+    /*寻水*/
+
+    #xunshui_c1{margin-top:10px;}
+    .xunshui_block1 h1{height:50px;}
+    .xunshui_block1 p,.xunshui_block2 p,.xunshui_block3 p{line-height:25px;}
+    .xunshui_block3 h1:nth-of-type(1){height:18px;}
+    .xunshui_block7 p{line-height:23px;}
+    .xunshui_block5 p{line-height:20px;}
+    .xunshui_block6 h1:nth-of-type(1){height:2px;}
+    .xunshui_block7 h1{height:10px;}
+}
+@media all and (max-width:320px) and (orientation:portrait) and (max-height:372px){/*4s*/
+    #index> img{width:70%;top:-30px;}
+    #shihun{position:relative;top:-30px;}
+    #shihun> img{width:70%;}
+    #main_nav{top:-30px;}
+    .sign:nth-of-type(1){left:20px;top:20px;}
+    .sign:nth-of-type(2){left:100px;top:60px;}
+    .sign:nth-of-type(3){left:214px;top:120px;}
+    .sign:nth-of-type(5){left:10%;top:130px;}    
+    .sign:nth-of-type(4){left:70%;top:0;}/*问路*/
+    .sign:nth-of-type(6){left:28%;top:170px}/*来信*/
+    .shuye4{left:33%;top:40%;}   
+    #xuyan h1{height:10px;}
+    #xuyan p{font-size:14px;line-height: 26px;}
+    
+    #hannue{overflow:scroll;}
+    #nav{position:fixed;bottom:0;}
+    #hannue .first p,#hannue .b_text{font-size:12px;}
+    #c6{-webkit-transform:rotate(-10deg) translate(10px,20px)}
+    #c7{-webkit-transform:rotate(10deg) translate(-10px,20px)}
+    #c8,#c10,#c12,#c14{margin-top:0px;}
+    .block4 .b_text{line-height:22px;}
+    .block5 .b_text{line-height:16px;}
+       .block2 .b_text{line-height:22px;position:relative;top:20px;}
+    .block7 p{line-height:20px;position:relative;top:10px;}
+    .block7 h1{height:10px;}
+    #shihun img{top:-10px;}
+    /*往事*/
+    #wangshi_c1{margin-top:10px;}
+    #wangshi ul li p{line-height:20px;}
+    #wangshi ul li h1{height:15px;}
+    #wangshi ul li img{width:60%;margin-top:0;}
+    .wangshi_block2 p{line-height:20px;}
+    #wangshi_c3{margin-top:2px;}
+    .wangshi_block5 img{position:relative;top:0;}
+    #wangshi{overflow:scroll;}
+    /*寻水*/
+    #xunshui{overflow:scroll;}
+    #xunshui_c1{margin-top:1px;}
+    .xunshui_block1 h1{width:80%;margin:0 auto;color:#4a3502;height:45px;font-size:16px;}
+    .xunshui_block1 p,.xunshui_block2 p{line-height:16px;}
+    .xunshui_block3 p{line-height:18px;}
+    .xunshui_block3 h1:nth-of-type(1){height:18px;}
+    .xunshui_block4 h1:nth-of-type(1){height:20px;}
+    .xunshui_block5 h1:nth-of-type(1){height:0}
+    .xunshui_block5 p{line-height:16px;}
+    .xunshui_block6 p{line-height:22px;}
+    .xunshui_block6 h2{height:10px;}
+    .xunshui_block7 h1{height:1px;}
+    .xunshui_block7 p{line-height:19px;}
+
+    /*账本*/
+    #zhangben,#wenlu,#fankui{overflow:auto;}
+}

@@ -1,0 +1,45 @@
+﻿
+#nav {width:100%;height:30px;position:absolute;z-index:20;}
+#nav ul{width:100%;height:30px;line-height:30px;display:-webkit-box;background:#e3c98b;-webkit-transform:scale(0);-webkit-transition:1s;}
+#nav ul li{-webkit-box-flex:1;-webkit-box-align:center;-webkit-box-pack:center;text-align:center;font-size:16px;}
+ 
+#hannue{width:100%;background:#e8dab5;text-align:center;overflow:hidden;position:relative;z-index:4;}
+#hannue ul{background:#e8dab5;-webkit-transition:.5s;}
+
+#hannue .first{display:-webkit-box;width:90%;margin:0 auto;margin-top:10px;}
+#hannue .first p:nth-of-type(1){background:#f90;color:#fff;padding:2px;border-radius:1px;width:20px;height:20px;margin-top:10px;line-height:20px;}
+#hannue .first p:nth-of-type(2){text-align:left;width:90%;margin:0 auto;line-height:20px;}
+#hannue .b_text{text-align:left;width:90%;text-indent:2em;margin:45px auto 0;}
+
+#hannue ul li{}
+#c1{margin-top:32px;-webkit-transform:translateX(112%);opacity:0;}
+#c2{-webkit-transform:translateX(-112%);opacity:0;}
+.block1 .first:nth-of-type(1),.block1 .first:nth-of-type(2){-webkit-transform:scale(0);opacity:0;}
+#c3{-webkit-transform:translate(30px,20px);opacity:0;}
+#c4{-webkit-transform:rotate(-20deg)translate(-10px,20px);opacity:0;}
+.block1 .b_text{-webkit-transform:translateY(140px)}
+ 
+.block2 h1{height:30px;}
+#c5{margin-top:20px;-webkit-transform:translateY(-100px);opacity:0;}
+.block2 .first:nth-of-type(1){-webkit-transform:scale(0) translateX(-100%);opacity:0;}
+.block2 .first:nth-of-type(2){-webkit-transform:scale(0) translateX(100%);opacity:0;}
+#c6{-webkit-transform:rotate(0deg) translate(10px,20px);z-index:3;opacity:0;}
+#c7{-webkit-transform:rotate(10deg) translate(-10px,70px);z-index:4;opacity:0;}
+.block2 .b_text{-webkit-transform:translateX(340px);opacity:0;line-height:30px;}
+#c6,#c7{position:relative;}
+#c8,#c10,#c12,#c14{margin-top:50px;}
+
+.block3{background:url(../images/hannue/6.jpg) no-repeat center center; background-size:cover;}
+.block4{background:url(../images/hannue/5.jpg) no-repeat center center; background-size:cover;}
+ 
+.block5 .b_text{line-height:30px;}
+.block6{background:transparent url(../images/hannue/bg.jpg) no-repeat center bottom; background-size:cover;}
+.block6 h3{color:#65532c;text-align:left;width:280px;line-height:30px;}
+.block7{background:url(../images/hannue/bg_last.jpg) no-repeat center top;background-size:cover;}
+.block7 p{width:90%;margin:0px auto;text-align:left;text-indent:2em;line-height:30px;position:relative;top:50px;color:#65532c;}
+.block7 p span{font-size:20px;font-weight:bold;}
+.block7 h1{height:20px;}
+.block5{background:url(../images/hannue/8.jpg) no-repeat center bottom;background-size:cover;}
+/*
+ 
+*/

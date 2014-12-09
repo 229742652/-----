@@ -1,0 +1,9 @@
+﻿#zhangben{width:100%;text-align:center;overflow:hidden;position:relative;z-index:4;}
+#zhangben ul{-webkit-transition:.5s;}
+#zhangben ul li{width:100%;}
+#zhangben ul li:nth-of-type(1){background:url(../images/zhangben/1.jpg) no-repeat center center;background-size:cover}
+#zhangben ul li:nth-of-type(2){background:url(../images/zhangben/2.jpg) no-repeat center center;background-size:cover}
+#zhangben ul li:nth-of-type(3){background:url(../images/zhangben/3.jpg) no-repeat center center;background-size:cover}
+#zhangben ul li:nth-of-type(4){background:url(../images/zhangben/4.jpg) no-repeat center center;background-size:cover}
+#zhangben ul li:nth-of-type(5){background:url(../images/zhangben/5.jpg) no-repeat center center;background-size:cover}
+ 

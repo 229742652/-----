@@ -1,0 +1,56 @@
+﻿html{height:100%;}
+body {font-size:14px;font-family:"微软雅黑";overflow:hidden;-webkit-transform-style:preserve-3d;-webkit-perspective:800px;}
+#logo{margin-top:-20px;}
+#code{position:fixed;z-index:9999;right:0;bottom:121px;width:80px;-webkit-transition:.5s;}
+#code_nav{width:60px;height:51px;background-position:0 0;position:fixed;z-index:9000;right:0;bottom:51px;background-size:cover;}
+
+#play{width:37px;height:40px;position:fixed;z-index:9999;right:20px;top:20px;background-position-x:-55px;}
+#wrap{overflow:hidden;position:relative;-webkit-transition:1s -webkit-transform;-webkit-transform-origin:left;}
+#index {font-size: 30px;margin: 0 auto;width: 100%;text-align: center;padding-top: 40px;height: 100%;background: url(../images/bg.jpg) no-repeat center bottom;background-size:cover;-webkit-transform-origin:left;}
+#index>img{-webkit-transform:scale(.2);-webkit-transition:1s;position:relative;top:-20px;opacity:0;}
+#shihun img{-webkit-transform:translateX(104%);-webkit-transition:1s 1s;width:90%;opacity:0;position:relative;top:-40px;}
+#main_nav{width:100%;height:100%;position:relative;-webkit-transform-style:preserve-3d;-webkit-perspective:800px;}
+.sign{position:absolute;background:url(../images/nav.png) no-repeat;width:80px;height:30px;-webkit-transform:scale(0)}
+#main_nav section{position:absolute;}
+.sign:nth-of-type(1){background-position-y:0;left:20px;top:20px;-webkit-transition:1s -webkit-transform cubic-bezier(0.685, -0.065, 0.545, 1.650);}
+.sign:nth-of-type(2){background-position-y:-120px;left:150px;top:70px;-webkit-transition:1s -webkit-transform cubic-bezier(0.685, -0.065, 0.545, 1.650) 1200ms;}
+.sign:nth-of-type(3){background-position-y:-60px;left:214px;top:170px;-webkit-transition:1s -webkit-transform cubic-bezier(0.685, -0.065, 0.545, 1.650) 600ms;}
+.sign:nth-of-type(4){background-position-y:-90px;left:75%;top:80px;-webkit-transition:1s -webkit-transform cubic-bezier(0.685, -0.065, 0.545, 1.650) 900ms;}/*问路*/
+.sign:nth-of-type(5){background-position-y:-30px;left:10%;top:130px;-webkit-transition:1s -webkit-transform cubic-bezier(0.685, -0.065, 0.545, 1.650) 300ms;}
+.sign:nth-of-type(6){background-position-y:-150px;left:28%;top:220px;-webkit-transition:1s -webkit-transform cubic-bezier(0.685, -0.065, 0.545, 1.650) 1500ms;}/*来信*/
+.shuye1{width:54px;height:54px;left:65%;top:5%;background-size:contain;opacity:0;}
+.shuye2{width:46px;height:67px;left:73%;top:15%;background-size:contain;opacity:0;} 
+.shuye3{width:41px;height:46px;left:73%;top:45%;background-size:contain;opacity:0;}   
+.shuye4{width:39px;height:60px;left:23%;top:50%;background-size:contain;opacity:0;}   
+.shuye{display:none}
+footer{position:fixed;bottom:0;background:rgba(0,0,0,.5);width:100%;height:30px;line-height:30px;text-align:center;color:#fff;font-size:20px;text-shadow:0 0 15px #000;}
+.section{-webkit-transform:translateY(100%);-webkit-transition:1s;}
+
+#xuyan{width:100%;background:url(../images/xu_bg.jpg) no-repeat;background-size:cover;opacity:1;position:absolute;top:100%;-webkit-transition:1s;z-index:3;opacity:0;}
+#xuyan h1{height:40px;opacity:0;}
+#xuyan p{width:85%;margin:0 auto;text-indent:2em;line-height:30px;font-size:18px;opacity:1;color:#fff}
+#xuyan p:nth-of-type(1){color: #ff8a00;text-align:center;font-size:32px;margin:0;height:50px;}
+
+#nav ul li{-webkit-transition:.8s;}
+#nav ul .active{color:red;text-shadow: 0 0 10px #f90, 0 0 20px #f90, 0 0 30px #f90, 0 0 40px #f90, 0 0 70px #f90, 0 0 80px #f90;-webkit-transform:scale(1.4);}
+
+@-webkit-keyframes shuye1Rotate {
+    from{-webkit-transform:rotateZ(0deg) rotateY(0deg) translate(100px,150px)}
+    to{-webkit-transform:rotateZ(0deg) rotateY(-360deg) translate(0px,0px);opacity:1;}
+}
+@-webkit-keyframes shuye2Rotate {
+    from{-webkit-transform:rotateZ(0deg) rotateY(0deg) translate(-100px,-150px)}
+    to{-webkit-transform:rotateZ(360deg) rotateY(-360deg) translate(0px,0px);opacity:1;}
+}
+
+@-webkit-keyframes shuye3Rotate {
+    from{-webkit-transform:rotateZ(360deg) rotateY(0deg) translate(100px,-150px)}
+    to{-webkit-transform:rotateZ(0deg) rotateY(-360deg) translate(0px,0px);opacity:1;}
+}
+
+@-webkit-keyframes shuye4Rotate {
+    from{-webkit-transform:rotateZ(360deg) rotateY(0deg) translate(-100px,100px)}
+    to{-webkit-transform:rotateZ(0deg) rotateY(0) translate(0px,0px);opacity:1;}
+}
+
+ 

@@ -1,0 +1,29 @@
+﻿#xunshui{width:100%;text-align:center;overflow:hidden;position:relative;z-index:4;}
+#xunshui ul{background:#cdeff2;-webkit-transition:.5s;}
+
+#xunshui_c1{margin-top:60px;}
+#xunshui ul li h1{color:#4a3502;}
+.xunshui_block1 h1{width:80%;margin:0 auto;color:#4a3502;height:70px;}
+.xunshui_block1 p,.xunshui_block2 p,.xunshui_block3 p,.xunshui_block4 p,.xunshui_block5 p,.xunshui_block6 p,.xunshui_block7 p{width:90%;text-align:left;margin:0 auto;text-indent:2em;line-height:30px;}  
+
+.xunshui_block2 h1{width:90%;margin:0 auto;}
+.xunshui_block2 h1:nth-of-type(2n+1) {height:20px;}
+
+
+.xunshui_block3 h1:nth-of-type(1),.xunshui_block4 h1:nth-of-type(1),.xunshui_block6 h1:nth-of-type(1){height:80px;}
+.xunshui_block3 h2{height:20px;}
+.xunshui_block4 h1:nth-of-type(2){width:70%;margin:0 auto;}
+
+.xunshui_block5 h1:nth-of-type(1){height:20px;} 
+.xunshui_block6 h2{height:20px;}
+.xunshui_block6 h1:nth-of-type(2){width:90%;margin:0 auto;}
+
+.xunshui_block7 h1{height:25px;}
+
+.xunshui_block1{background:url(../images/xunshui/1.jpg) no-repeat center center;background-size:cover;}
+.xunshui_block2{background:url(../images/xunshui/2.jpg) no-repeat center center;background-size:cover;}
+.xunshui_block3{background:url(../images/xunshui/3.jpg) no-repeat center center;background-size:cover;}
+.xunshui_block4{background:url(../images/xunshui/4.jpg) no-repeat center center;background-size:cover;}
+.xunshui_block5{background:url(../images/xunshui/5.jpg) no-repeat center center;background-size:cover;}
+.xunshui_block6{background:url(../images/xunshui/6.jpg) no-repeat center center;background-size:cover;}
+.xunshui_block7{background:url(../images/xunshui/7.jpg) no-repeat center center;background-size:cover;}

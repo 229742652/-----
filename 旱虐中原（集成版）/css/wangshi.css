@@ -1,0 +1,20 @@
+﻿#wangshi{overflow:hidden;position:relative;z-index:5;}
+#wangshi ul{background:url(../images/hn_bg.jpg) no-repeat;width:100%;background-size:cover;-webkit-transition:.5s;}
+#wangshi ul li{text-align:center;}
+#wangshi_c1{margin-top:50px;}
+#wangshi ul li p{width:90%;margin:0 auto;text-align:left;line-height:30px;text-indent:2em;}
+#wangshi ul li h1{height:20px;}
+#wangshi ul li img{width:80%;margin-top:20px;}
+
+#wangshi .wangshi_block3{background-size:contain;}
+#wangshi_c3{margin-top:70px;}
+#wangshi .wangshi_block4 h2{text-align:left;text-indent:1em;}
+.wangshi_block6 h3{text-align:left;width:200px;margin:0px auto;position:relative;top:20px;left:-35px;}
+
+.wangshi_block6 h3:nth-of-type(2){text-align:right;}
+.wangshi_block1{background:url(../images/wangshi/1.jpg) no-repeat;background-size:cover;}
+.wangshi_block4{background:url(../images/wangshi/4.jpg) no-repeat;background-size:cover;}
+.wangshi_block5{background:url(../images/wangshi/5.jpg) no-repeat;background-size:cover;}
+.wangshi_block6{background:url(../images/wangshi/6.jpg) no-repeat;background-size:cover;}
+
+.wangshi_block2 h2{margin:20px 0;}

@@ -1,0 +1,10 @@
+﻿#wenlu{width:100%;text-align:center;overflow:hidden;position:relative;z-index:4;}
+#wenlu ul{-webkit-transition:.5s;}
+#wenlu ul li{width:100%;}
+#wenlu ul li:nth-of-type(1){background:url(../images/wenlu/1.jpg) no-repeat center center;background-size:cover}
+#wenlu ul li:nth-of-type(2){background:url(../images/wenlu/2.jpg) no-repeat center center;background-size:cover}
+#wenlu ul li:nth-of-type(3){background:url(../images/wenlu/3.jpg) no-repeat center center;background-size:cover}
+#wenlu ul li:nth-of-type(4){background:url(../images/wenlu/4.jpg) no-repeat center center;background-size:cover}
+#wenlu ul li:nth-of-type(5){background:url(../images/wenlu/5.jpg) no-repeat center center;background-size:cover}
+#wenlu ul li:nth-of-type(6){background:url(../images/wenlu/6.jpg) no-repeat center center;background-size:cover}
+#wenlu ul li:nth-of-type(7){background:url(../images/wenlu/7.jpg) no-repeat center center;background-size:cover}
