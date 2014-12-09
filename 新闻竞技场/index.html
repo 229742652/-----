@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <title>新闻竞技场</title>
+    <link href="http://xinhuatone.com/zt/xwjjc/m/01/css/base.css" rel="stylesheet" />
+    <link href="http://xinhuatone.com/zt/xwjjc/m/01/css/index.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrap">
+        <div id="index" >
+            <div id="logo">
+                <canvas><img src="images/news.png" width="278" height="240" /></canvas>
+            </div>
+            <div id="qishu">1</div>
+            <div id="start_btn" class="btn">开  始</div>
+            <a class="btn" href="#" data-prve="true">上一期</a>
+            <footer>新华社发布客户端出品</footer>
+        </div>
+        <div id="remark" hidden>
+            <h3></h3>
+            <p></p>
+            <div id="start" class="btn">开始答题</div>
+        </div>
+        <div id="question" hidden class="transtion_500ms">
+            <div>
+                <span><span id="current_page">1</span>/<span id="all_page"></span></span>
+                <div id="question_num"><span class="transtion_500ms"><label>总</label><label>得</label><label>分</label></span><span class="transtion_500ms"></span></div>
+                <p id="time"><span>00</span>:<span>00</span></p>
+            </div>
+            <div id="question_content">
+                <p id="question_mian"></p>
+                <ul id="anwser_box" class="transform3d perspective_800">
+                    <li><div></div><div></div></li>
+                    <li><div></div><div></div></li>
+                    <li><div></div><div></div></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="result" hidden>
+            <div>
+                <p id="right_wrong"><canvas id="w_r_img"><img src="images/right.png" /></canvas></p>
+            </div>
+          
+            <!--<p id="right_anwser"></p>-->
+            <div id="gonglue" hidden>
+               
+                <p>
+                </p>
+            </div>
+            <div id="next"><span>下一题</span></div>
+        </div>
+        <div id="share" hidden>
+            <div id="level">
+                <canvas id="share_logo"><img src="images/level.png" /></canvas>
+                <span id="level_count"></span>
+                <div id="question_time"></div>
+            </div>
+            <div id="scrore">你答对了<span></span>道题，获得<span></span>称号!</div>
+            <div id="share_btn" class="share_btn">分享</div>
+            <a class="share_btn" id="prev" data-prve="true" style="height:0;overflow:hidden">上一期</a>
+            <div class="jiathis_style_32x32" id="jiathis" hidden>
+                <a class="jiathis_button_qzone"></a>
+                <a class="jiathis_button_tsina"></a>
+                <a class="jiathis_button_tqq"></a>
+                <a class="jiathis_button_weixin"></a>
+                <a class="jiathis_button_renren"></a>
+                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                <a class="jiathis_counter_style"></a>
+            </div>
+            <footer>新华社发布客户端出品</footer>
+        </div>
+    </div>
+
+    <script src="http://xinhuatone.com/zt/xwjjc/m/01/js/zepto.min.js"></script>
+    <script src="http://xinhuatone.com/zt/xwjjc/m/01/js/util.js"></script>
+    <script src="http://xinhuatone.com/zt/xwjjc/m/01/js/linten-zepto-touch.js"></script>
+    <script src="js/newsdata.js"></script>
+    <script src="http://xinhuatone.com/zt/xwjjc/m/01/js/index.js" id=""></script>
+    <script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=1393999199460406"  charset="utf-8"></script>
+
+</body>
+
+</html>

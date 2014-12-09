@@ -1,0 +1,8 @@
+﻿CACHE MANIFEST
+     #AddType text/cache-manifest .appcache
+     #version 1.46
+     CACHE:
+     css/index.css
+     images/logo.jpg
+     NETWORK:
+         *

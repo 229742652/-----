@@ -1,0 +1,12 @@
+﻿CACHE MANIFEST
+     #AddType text/cache-manifest .appcache
+     #version 1.12
+     CACHE:
+     css/index.css
+     images/index.jpg
+	 images/xu.jpg
+	 images/bg.jpg
+	 js/zepto-touch.js
+	 js/index.js
+     NETWORK:
+         *
