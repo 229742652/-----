@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="pragram" content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <link href="css/index.min.css" rel="stylesheet" />
+    <title>移动轻应用模板</title>
+</head>
+<body>
+    <section id="container">
+        <ul>
+            <li class="active">
+                <img src="images/1.jpg" />
+                <p>2014-11-02期 澳男子弃船爬上鲸鱼尸体 遭捕食 澳男子弃船爬上鲸鱼尸体 遭捕食 澳男子弃船爬上鲸鱼尸体 遭捕食鲨鱼群围困2014-11-02期 澳男子弃船爬上鲸鱼尸体 遭捕食鲨鱼群围困2014-11-02期 澳男子弃船爬上鲸鱼尸体 遭捕食鲨鱼群围困</p>
+            </li>
+            <li>
+                <img src="images/2.jpg" />
+                <p>2014-11-02期 澳男子弃船爬上鲸鱼尸体 遭捕食鲨鱼群围困2014-11-02期 澳男子弃船爬上鲸鱼尸体 遭捕食鲨鱼群围困2014-11-02期 澳男子弃船爬上鲸鱼尸体 遭捕食鲨鱼群围困</p>
+            </li>
+            <li>
+                <img src="images/3.jpg" />
+                <p>2014-11-02期 澳男子弃船爬上鲸鱼尸体 遭捕食鲨鱼群围困2014-11-02期 澳男子弃船爬上鲸鱼尸体 遭捕食鲨鱼群围困2014-11-02期 澳男子弃船爬上鲸鱼尸体 遭捕食鲨鱼群围困</p>
+            </li>
+            <li>
+                <img src="images/4.jpg" />
+                <p>2014-11-02期 澳男子弃船爬上鲸鱼尸体 遭捕食鲨鱼群围困2014-11-02期 澳男子弃船爬上鲸鱼尸体 遭捕食鲨鱼群围困2014-11-02期 澳男子弃船爬上鲸鱼尸体 遭捕食鲨鱼群围困</p>
+            </li>
+            <li>
+                <img src="images/5.jpg" />
+                <p>2014-11-02期 澳男子弃船爬上鲸鱼尸体 遭捕食鲨鱼群围困2014-11-02期 澳男子弃船爬上鲸鱼尸体 遭捕食鲨鱼群围困2014-11-02期 澳男子弃船爬上鲸鱼尸体 遭捕食鲨鱼群围困</p>
+            </li>
+            <li>
+                <img src="images/6.jpg" />
+                <p>2014-11-02期 澳男子弃船爬上鲸鱼尸体 遭捕食鲨鱼群围困2014-11-02期 澳男子弃船爬上鲸鱼尸体 遭捕食鲨鱼群围困2014-11-02期 澳男子弃船爬上鲸鱼尸体 遭捕食鲨鱼群围困</p>
+            </li>
+        </ul>
+    </section>
+    <script src="js/zepto-touch.min.js"></script>
+    <script>
+        $(function () { function i(t, i) { n.aLi.width(t).height(i); n.contaniner.height(i); n.content.width(n.iWidth * n.len) } var n = { iWidth: document.documentElement.clientWidth, iHeight: document.documentElement.clientHeight, contaniner: $("#container"), content: $("#container ul"), aLi: $("#container li"), len: $("#container li").size(), text: $("#container li p") }, t; i(n.iWidth, n.iHeight); t = 0; n.content.swipe("left", function () { t++; t >= n.len - 1 && (t = n.len - 1); n.aLi.eq(t - 1)[0].className = "left"; n.aLi.eq(t)[0].className = "active" }).swipe("right", function () { t--; t <= 0 && (t = 0); n.aLi.eq(t + 1)[0].className = "right"; n.aLi.eq(t)[0].className = "active" }) });
+    </script>
+</body>
+</html>
