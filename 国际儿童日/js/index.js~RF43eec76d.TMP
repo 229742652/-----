@@ -1,0 +1,128 @@
+﻿$(function () {
+    var data = {
+        iWidth: document.documentElement.clientWidth,
+        iHeight: document.documentElement.clientHeight,
+        container: $("#container"),
+        clip: $("#container .clip"),
+        hand: $("#container .hand"),
+        mask: $("#mask"),
+        colse: $("#mask .close"),
+        alert: $("#container .clip .alert"),
+        index:$("#index")
+    }
+
+
+    data.index.swipe("up", function () {
+
+    });
+
+    
+    function init(i) {
+        data.clip.eq(i).find("img").eq(0).css({ clip: "rect(0, "+data.iWidth+"px, "+data.iWidth+"px, 0)" });
+        data.clip.eq(i).find("img").eq(1).css({ clip: " rect(0," + data.iWidth + "px, " + data.iWidth + "px, " + (data.iWidth / 2) + "px)" });
+    }
+
+    //设置手指的位置。
+    data.clip.each(function (i, n) {
+        init(i)
+        var src = $(this).find("img").eq(0).attr("src")
+        loadImg(src, function (_this) {
+            var h = _this.height / _this.width * data.iWidth;
+            data.hand.eq(i).height(h).css({ left: data.iWidth / 2 - data.hand.width() / 2 });
+            data.clip.eq(i).height(h);
+
+            data.hand.each(function (i, n) {
+                var _this = this;
+                $(this).on("touchstart", function (e) {
+                    var e = e.changedTouches[0];
+                    var disX = e.pageX - $(this).offset().left;
+                    $(_this).on("touchmove", function (e) {
+                        var e = e.changedTouches[0];
+                        var left = e.pageX - disX;
+                        if (left < -data.hand.width() / 2) {
+                            left = -data.hand.width() / 2;
+                        }
+                        if (left>data.iWidth-data.hand.width()/2) {
+                            left = data.iWidth - data.hand.width() / 2;
+                        }
+                        $(_this).css({ left:left}); 
+
+                        data.clip.eq(i).find("img").eq(1).css({ clip: " rect(0," + data.iWidth + "px, " + data.iWidth + "px, " + (left + data.hand.width() / 2) + "px)" });
+
+                    }).on("touchend", function (e) {
+                        var e = e.changedTouches[0];
+                    });
+                });
+
+            });
+
+
+        })
+    });
+
+    data.mask.on("touchmove", function () { return false;})
+
+    data.colse.tap(function () {
+        data.mask.css("display", "none")
+    });
+
+    data.alert.each(function (i,n) {
+        $(this).tap(function (e,_this) {
+            data.mask.css("display","-webkit-box");
+            data.mask.find("p").html(text[i]);
+        });
+    });
+
+    function loadImg(src,fn) {
+        var img = new Image();
+        img.onload = function () {
+            fn && fn(this);
+        }
+
+        img.src = src;
+    }
+    
+
+    var text = [
+        "1移动轻应用模板移动轻应用模板移动轻应用模板移动轻应用模板移动轻应用模板移动轻应用模板动轻应用模板动轻应用模板动轻应用模板动轻应用模板动轻应用模板动轻应用模板动轻应用模板动轻应用模板动轻应用模板动轻应用模板",
+        "2移动轻应用模板移动轻应用模板移动轻应用模板移动轻应用模板移动轻应用模板移动轻应用模板动轻应用模板动轻应用模板动轻应用模板动轻应用模板动轻应用模板动轻应用模板动轻应用模板动轻应用模板动轻应用模板动轻应用模板",
+        "3移动轻应用模板移动轻应用模板移动轻应用模板移动轻应用模板移动轻应用模板移动轻应用模板动轻应用模板动轻应用模板动轻应用模板动轻应用模板动轻应用模板动轻应用模板动轻应用模板动轻应用模板动轻应用模板动轻应用模板"
+    ];
+
+
+
+    function LoadImages(arr,fn) {
+        var len = arr.length;
+        var count = 0;
+        var i = 0;
+        loadimg();
+        function loadimg() {
+            if (i === len) {
+                return;
+            }
+            var img = new Image();
+            img.onload = function () {
+                count++;
+                if (i < len - 1) {
+                    i++;
+                    loadimg();
+                };
+                if (count/len>=1) {
+                    fn && fn();
+                }
+            };
+            img.onerror = function () {
+                count++;
+                if (i < len - 1) {
+                    i++;
+                    loadimg();
+                };
+                if (count / len >= 1) {
+                    fn && fn();
+                }
+            }
+            img.src = arr[i];
+        }
+    }
+
+});

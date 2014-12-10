@@ -1,0 +1,25 @@
+﻿CACHE MANIFEST
+     #AddType text/cache-manifest .appcache
+     #version 1.75
+     CACHE:
+     css/index.min.css
+     images/index.jpg
+     images/xu.jpg
+     images/1.jpg
+     images/2.jpg
+     images/3.jpg
+     images/4.jpg
+     images/5.jpg
+     images/6.jpg
+     images/7.jpg
+     images/8.jpg
+     images/9.jpg
+     images/10.jpg
+	 images/children.png
+	 images/circle.png
+	 images/face.png
+	 images/an.png
+	 images/hand.png
+	 js/zepto-touch.min.js
+     NETWORK:
+         *
