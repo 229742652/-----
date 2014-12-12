@@ -1,0 +1,115 @@
+﻿html, body, div, p, ul, li, ol,  dl, dt, dd, header, footer,video,h1,h2,h3,h4 ,canvas,section,figure{padding:0;margin:0;}
+a{text-decoration:none;}
+li{list-style:none;}
+html{height:100%;}
+img {border:none;vertical-align:top;width:100%;}
+input,textarea{outline:none;}
+body{font-family:"微软雅黑";font-size:14px;background:url(../images/tujie/bg.jpg) repeat;overflow:hidden;}
+
+#container{
+    overflow:auto;
+}
+.close{width:48px;height:48px;position:fixed;z-index:10;right:0;}
+#content {
+    border:5px solid red;
+    box-sizing:border-box;
+    width: 100%; 
+    -webkit-transform-style:preserve-3d;
+    -webkit-perspective:800px;
+    padding-bottom:30px;
+    .tujie{
+        .width();
+        .auto(10px);
+        
+    }
+    .aw{
+        .width(40px);
+        .auto(10px);
+    }
+    
+    .line{
+        background:url(../images/tujie/border.png);
+        height:2px;
+    }
+    .text{
+        .width(75%);
+        .auto(20px);
+        .background();
+        padding:10px 0 10px 5%;
+        p{
+            color:#fff;
+            margin:4px 0;
+        }
+        .position(r);
+        &:before{
+            content:"";
+            display:inline-block;
+            width:30px;
+            height:30px;
+            .background();
+            .position(a);
+            left: -8px;
+            border-radius: 2px;
+            -webkit-transform: rotate(45deg);
+            z-index: -1;
+        }
+    }
+
+    .default{
+        -webkit-transform-origin:top;
+        -webkit-transform:rotateX(-100deg);
+        -webkit-perspective-origin:bottom;
+        backface-visibility:hidden;
+        -webkit-transition:300ms -webkit-transform;
+        opacity:0;
+    }
+    .active{
+        -webkit-transform:rotateX(0);
+        opacity:1;
+    }
+        
+    .notify{
+        .width(90%);
+        .auto();
+        .background(#fbf8e0);
+        border:1px solid #e5d6b7;
+        border-radius:4px;
+        padding:10px 0;
+        p{
+            text-align:center;
+            color:#e0481e;
+        }
+        .position(r);
+        &:before{
+            content:"";
+            display:inline-block;
+            width:10px;
+            height:10px;
+            border-radius:2px;
+            .position(a);
+            left:50%;
+            top:-5px;
+             border:1px solid #e5d6b7;
+            z-index:-1;
+            -webkit-transform:rotate(45deg);
+            .background(#fbf8e0);
+        }
+    }
+    .position(a){
+        position:absolute;
+    }
+     .position(r){
+        position:relative;
+    }
+
+    .background(@color:#965656){
+        background:@color;
+    }
+}
+
+.auto(@margin:0){
+    margin: @margin auto;
+}
+.width(@value:80%){
+    width:@value;
+}

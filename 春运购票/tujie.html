@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-touch-fullscreen" content="YES" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="pragram" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link href="css/tujie.min.css" rel="stylesheet" />
+    <title>春运购票</title>
+</head>
+<body>
+    <div class="close"><a href="index.html"><img src="images/tujie/close.png" alt="Alternate Text" /></a></div>
+    <section id="container">
+        <div id="content">
+            <div class="tujie1 tujie">
+                <img src="images/tujie/1.png" alt="" />
+            </div>
+            <h1 class="line"></h1>
+            <div class="tujie2 tujie">
+                <img src="images/tujie/2.png" alt="" />
+            </div>
+            <div class="tujie3 tujie default">
+                <img src="images/tujie/3.png" alt="" />
+            </div>
+            <div class="aw tujie">
+                <img src="images/tujie/aw.png" alt="" />
+            </div>
+            <div class="tujie4 tujie default">
+                <img src="images/tujie/4.png" alt="" />
+            </div>
+            <div class="aw">
+                <img src="images/tujie/aw.png " alt="" />
+            </div>
+            <div class="tujie5 tujie default">
+                <img src="images/tujie/5.png" alt="" />
+            </div>
+            <h1 class="line"></h1>
+            <div class="tujie6 tujie">
+                <img src="images/tujie/6.png" alt="" />
+            </div>
+            <div class="tujie7 tujie default">
+                <img src="images/tujie/7.png" alt="" />
+            </div>
+            <div class="text">
+                <p>开车前 48小时（不含）</p>
+                <p>可改签预售期内的其他列车</p>
+            </div>
+            <div class="text">
+                <p>开车前 48小时以内</p>
+                <p>可改签开车前的其他列车</p>
+                <p>或开车后至当日24点之间的其他列车</p>
+            </div>
+            <div class="text">
+                <p>开车后</p>
+                <p>可改签当日其他列车</p>
+                <p>但只能在票面始发站办理改签</p>
+            </div>
+
+            <div class="notify" id="notify">
+                <p>注意：改签后的车票乘车日期在春运期间</p>
+                <p>（2015年春运期间为2月4日至3月15日）的，</p>
+                <p>退票时一律按开车时间前不足24小时标准核收退票费。</p>
+            </div>
+        </div>
+    </section>
+    <script src="js/zepto-touch.min.js"></script>
+    <script>
+        !function () { function r() { } function i() { n.tujie.each(function () { $(this).offset().top <= t + n.iHeight / 2 && $(this).addClass("active") }) } var n = { iWidth: document.documentElement.clientWidth, iHeight: document.documentElement.clientHeight, container: $("#container"), content: $("#content"), tujie: $(".tujie") }, t; r(n.iWidth, n.iHeight); navigator.userAgent.match(/(iPhone|iPod)/i) && navigator.userAgent.match(/(version\/7)/i) && n.tujie.each(function () { $(this).removeClass("default") }); t = 0; i(); $(document).on("scroll", function () { t = document.documentElement.scrollTop || document.body.scrollTop; i() }) }();
+    </script>
+    
+</body>
+
+</html>
