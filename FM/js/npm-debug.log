@@ -1,0 +1,130 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json FM@0.0.1 No description
+6 warn package.json FM@0.0.1 No repository field.
+7 warn package.json FM@0.0.1 No README data
+8 verbose readDependencies using package.json deps
+9 verbose install where, deps [ 'E:\\project\\FM\\js',
+9 verbose install   [ 'grunt', 'grunt-contrib-uglify', 'grunt-contrib-less' ] ]
+10 info preinstall FM@0.0.1
+11 verbose readDependencies using package.json deps
+12 verbose already installed skipping grunt@~0.4.5 E:\project\FM\js
+13 verbose already installed skipping grunt-contrib-uglify@~0.5.1 E:\project\FM\js
+14 verbose cache add [ 'grunt-contrib-less@~0.4.5', null ]
+15 verbose cache add name=undefined spec="grunt-contrib-less@~0.4.5" args=["grunt-contrib-less@~0.4.5",null]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: 'grunt-contrib-less@~0.4.5',
+16 verbose parsed url   path: 'grunt-contrib-less@~0.4.5',
+16 verbose parsed url   href: 'grunt-contrib-less@~0.4.5' }
+17 verbose cache add name="grunt-contrib-less" spec="~0.4.5" args=["grunt-contrib-less","~0.4.5"]
+18 verbose parsed url { protocol: null,
+18 verbose parsed url   slashes: null,
+18 verbose parsed url   auth: null,
+18 verbose parsed url   host: null,
+18 verbose parsed url   port: null,
+18 verbose parsed url   hostname: null,
+18 verbose parsed url   hash: null,
+18 verbose parsed url   search: null,
+18 verbose parsed url   query: null,
+18 verbose parsed url   pathname: '~0.4.5',
+18 verbose parsed url   path: '~0.4.5',
+18 verbose parsed url   href: '~0.4.5' }
+19 verbose addNamed [ 'grunt-contrib-less', '~0.4.5' ]
+20 verbose addNamed [ null, '>=0.4.5-0 <0.5.0-0' ]
+21 silly lockFile e9cfbcff-grunt-contrib-less-0-4-5 grunt-contrib-less@~0.4.5
+22 verbose lock grunt-contrib-less@~0.4.5 C:\Users\Administrator\AppData\Roaming\npm-cache\e9cfbcff-grunt-contrib-less-0-4-5.lock
+23 silly addNameRange { name: 'grunt-contrib-less',
+23 silly addNameRange   range: '>=0.4.5-0 <0.5.0-0',
+23 silly addNameRange   hasData: false }
+24 verbose request where is /grunt-contrib-less
+25 verbose request registry https://registry.npmjs.org/
+26 verbose request id f1e5eabcc3cb301f
+27 verbose url raw /grunt-contrib-less
+28 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-less' ]
+29 verbose url resolved https://registry.npmjs.org/grunt-contrib-less
+30 verbose request where is https://registry.npmjs.org/grunt-contrib-less
+31 info trying registry request attempt 1 at 14:50:06
+32 verbose etag "IGQ3QDKTCX0OTYEVBK7JSGP6"
+33 http GET https://registry.npmjs.org/grunt-contrib-less
+34 http 304 https://registry.npmjs.org/grunt-contrib-less
+35 silly registry.get cb [ 304,
+35 silly registry.get   { date: 'Sat, 27 Dec 2014 06:50:09 GMT',
+35 silly registry.get     server: 'Apache',
+35 silly registry.get     via: '1.1 varnish',
+35 silly registry.get     'last-modified': 'Sat, 27 Dec 2014 06:50:09 GMT',
+35 silly registry.get     'cache-control': 'max-age=60',
+35 silly registry.get     etag: '"IGQ3QDKTCX0OTYEVBK7JSGP6"',
+35 silly registry.get     age: '11',
+35 silly registry.get     'x-served-by': 'cache-ty68-TYO',
+35 silly registry.get     'x-cache': 'HIT',
+35 silly registry.get     'x-cache-hits': '1',
+35 silly registry.get     'x-timer': 'S1419663009.059408,VS0,VE0',
+35 silly registry.get     vary: 'Accept',
+35 silly registry.get     'content-length': '0',
+35 silly registry.get     'keep-alive': 'timeout=10, max=50',
+35 silly registry.get     connection: 'Keep-Alive' } ]
+36 verbose etag https://registry.npmjs.org/grunt-contrib-less from cache
+37 silly addNameRange number 2 { name: 'grunt-contrib-less',
+37 silly addNameRange   range: '>=0.4.5-0 <0.5.0-0',
+37 silly addNameRange   hasData: true }
+38 silly addNameRange versions [ 'grunt-contrib-less',
+38 silly addNameRange   [ '0.1.0',
+38 silly addNameRange     '0.2.0',
+38 silly addNameRange     '0.2.1',
+38 silly addNameRange     '0.2.2',
+38 silly addNameRange     '0.3.0',
+38 silly addNameRange     '0.3.1',
+38 silly addNameRange     '0.3.2',
+38 silly addNameRange     '0.5.0',
+38 silly addNameRange     '0.5.1',
+38 silly addNameRange     '0.5.2',
+38 silly addNameRange     '0.6.0',
+38 silly addNameRange     '0.6.1',
+38 silly addNameRange     '0.6.2',
+38 silly addNameRange     '0.6.3',
+38 silly addNameRange     '0.6.4',
+38 silly addNameRange     '0.6.5',
+38 silly addNameRange     '0.7.0',
+38 silly addNameRange     '0.8.0',
+38 silly addNameRange     '0.8.1',
+38 silly addNameRange     '0.8.2',
+38 silly addNameRange     '0.8.3',
+38 silly addNameRange     '0.9.0',
+38 silly addNameRange     '0.10.0',
+38 silly addNameRange     '0.11.0',
+38 silly addNameRange     '0.11.1',
+38 silly addNameRange     '0.11.2',
+38 silly addNameRange     '0.11.3',
+38 silly addNameRange     '0.11.4',
+38 silly addNameRange     '0.12.0',
+38 silly addNameRange     '1.0.0',
+38 silly addNameRange     '0.5.0-rc7' ] ]
+39 silly lockFile e9cfbcff-grunt-contrib-less-0-4-5 grunt-contrib-less@~0.4.5
+40 silly lockFile e9cfbcff-grunt-contrib-less-0-4-5 grunt-contrib-less@~0.4.5
+41 error notarget No compatible version found: grunt-contrib-less@'>=0.4.5-0 <0.5.0-0'
+41 error notarget Valid install targets:
+41 error notarget ["0.1.0","0.2.0","0.2.1","0.2.2","0.3.0","0.3.1","0.3.2","0.5.0","0.5.1","0.5.2","0.6.0","0.6.1","0.6.2","0.6.3","0.6.4","0.6.5","0.7.0","0.8.0","0.8.1","0.8.2","0.8.3","0.9.0","0.10.0","0.11.0","0.11.1","0.11.2","0.11.3","0.11.4","0.12.0","1.0.0","0.5.0-rc7"]
+41 error notarget
+41 error notarget This is most likely not a problem with npm itself.
+41 error notarget In most cases you or one of your dependencies are requesting
+41 error notarget a package version that doesn't exist.
+42 error System Windows_NT 6.1.7601
+43 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+44 error cwd E:\project\FM\js
+45 error node -v v0.10.35
+46 error npm -v 1.4.28
+47 error code ETARGET
+48 verbose exit [ 1, true ]

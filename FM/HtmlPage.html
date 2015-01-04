@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+    <title></title>
+    <style>
+        p:nth-of-type(2n+1){
+           border:1px solid red;
+            height:1140px;
+        }
+      
+        #wrapper {
+            position: relative;
+            z-index: 1;
+            height: 500px; /* Desired element height */
+            border:1px solid blue;
+            overflow:scroll;
+        } 
+    </style>
+    <script src="js/iscroll.js"></script>
+    <script type="text/javascript">
+        var myScroll;
+        function loaded() {
+            myScroll = new iScroll('wrapper');
+        }
+        document.addEventListener('DOMContentLoaded', loaded, false);
+        window.onload = function () {
+           setTimeout(function () { new iScroll(document.getElementById('scroller')) }, 100)
+        };
+    </script> 
+        </head>
+<body>
+    <div id="wrapper">
+        <p id="scroller">
+            <article><img data-audiosrc="audios/news/1.mp3" src="images/jingxuan/news/1.jpg" alt="" /></article>
+            <article><img data-audiosrc="audios/news/1.mp3" src="images/jingxuan/news/1.jpg" alt="" /></article>
+            <article><img data-audiosrc="audios/news/1.mp3" src="images/jingxuan/news/1.jpg" alt="" /></article>
+            <article><img data-audiosrc="audios/news/1.mp3" src="images/jingxuan/news/1.jpg" alt="" /></article>
+            <article><img data-audiosrc="audios/news/1.mp3" src="images/jingxuan/news/1.jpg" alt="" /></article>
+            <article><img data-audiosrc="audios/news/1.mp3" src="images/jingxuan/news/1.jpg" alt="" /></article>
+            <article><img data-audiosrc="audios/news/1.mp3" src="images/jingxuan/news/1.jpg" alt="" /></article>
+        </p>
+    </div>
+   
+</body>
+        </html>
