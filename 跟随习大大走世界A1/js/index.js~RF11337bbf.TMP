@@ -1,0 +1,153 @@
+﻿
+
+$(function () {
+    var data = {
+        iWidth: document.documentElement.clientWidth,
+        iHeight: document.documentElement.clientHeight,
+        container: $("#container"),
+        main: $("#main"),
+        aLi: $("#main li"),
+        len: $("#main li").size(),
+        json: {},
+        index:0,//当前是哪个国家
+        content:$("#content"),
+        imgList: $("#imgList"),
+        mask:$("#mask"),
+        imgContainer: $("#imgList ul"),
+        animate: ["lightSpeedIn", "slideDown", "slideUp", "slideLeft", "slideRight",
+                  "slideExpandUp", "expandUp", "fadeIn", "expandOpen", "bigEntrance",
+                  "hatch", "bounce", "pulse", "floating", "pullUp", "pullDown",
+                  "stretchLeft", "stretchRight", "tada", "flip", "rubberBand", "zoomOutUp"] //22种动画效果。
+    }
+    
+    function setSize(iW, iH) {
+        data.aLi.width(iW).height(iH);
+        data.container.height(iH);
+        var img = new Image();
+        img.onload = function () {
+            var iheight = this.height / this.width * data.iWidth;
+            data.mask.find(".textContainer").height(data.iHeight - iheight - 40);
+            data.content.slider(function () { }, { isNeedProcess: true });
+        }
+        img.src = "images/1.png";
+
+    }
+    
+   
+    setSize(data.iWidth, data.iHeight);
+   
+
+    
+    function createImgList(imgs) {
+        var len = imgs.length;
+        var html = "";
+        for (var i = 0; i < len; i++) {
+            html += "<li><img src=" + imgs[i] + " alt=''/></li>";
+        }
+        data.imgContainer.append(html);
+        var iNow = 0;
+        data.imgContainer.swipe("left", function (e, _this) {
+            iNow++;
+            if (iNow >= len - 1) {
+                iNow = len - 1;
+            }
+            setTrans3d($(_this), [-iNow * data.iWidth + "px", 0, 0]);
+
+        }).swipe("right", function (e, _this) {
+            iNow--;
+            if (iNow <= 0) {
+                iNow = 0;
+            }
+
+            setTrans3d($(_this), [-iNow * data.iWidth + "px", 0, 0]);
+        });
+
+        data.content.append(dialogData[data.index].text)
+    };
+
+
+    render();
+    function render() {
+        createImgList(dialogData[data.index].imgs);
+    }
+
+
+    data.mask.tap(function (e,_this) {
+        if ($(e.target).attr("class") === "close") {//关闭弹出层。
+            closeMask(_this)
+        }
+    });
+
+    function closeMask(_this) {
+        $(_this).css("-webkit-transform","scale(0,1)")
+    }
+  
+    function openMask() {
+        data.mask.css("-webkit-transform", "scale(1,1)");
+    }
+
+    function setTrans3d(obj, arr) {
+
+        if (arguments.length === 1) {
+            obj.css("-webkit-transform", "translate3d(0,0,0)");
+        }
+        else {
+            obj.css("-webkit-transform", "translate3d(" + arr[0] + "," + arr[1] + "," + arr[2] + ")");
+        }
+        return obj;
+    }
+
+
+    
+
+    loadImgs(["images/xidada.png"], function (json) {
+        var c1 = $("#c1")[0];
+        var context = c1.getContext("2d");
+        
+        
+        
+        var i = 0;
+        
+        function change() {
+            context.clearRect(0, 0, c1.width, c1.height);
+            i += 0.05;
+             
+            i = i <= 3 ? i : 0;
+            
+            context.drawImage(json["xidada"], 0, 118 * parseInt(i), 108, 118, 0, 0, 108 / 2, 118 / 2);
+            window.webkitRequestAnimationFrame(change);
+        }
+        window.webkitRequestAnimationFrame(change);
+    });
+    function loadImgs(arr, fnSuccess) {
+        var len = arr.length;
+        var loaded = 0;
+        
+        for (var i = 0; i < len; i++) {
+            var img = new Image();
+            img.onload = function () {
+                loaded++;
+                if (loaded === len) {
+                    fnSuccess && fnSuccess(data.json);
+                }
+            };
+            img.src = arr[i];
+            var name = arr[i].split('.')[0].split('/')[1];
+            data.json[name] = img;
+        }
+    }
+
+    
+
+
+    
+
+    
+    
+
+
+  
+    $(document).on("touchmove", function () { return false;})
+ 
+
+});

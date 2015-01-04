@@ -1,0 +1,81 @@
+﻿(function (w) {
+    var dialogData = [
+        {
+            imgs: ["images/1.png", "images/2.png", "images/3.png"]
+        }
+
+    ];
+    w.dialogData = dialogData;
+})(window);
+
+$(function () {
+    var data = {
+        iWidth: document.documentElement.clientWidth,
+        iHeight: document.documentElement.clientHeight,
+        container: $("#container"),
+        main: $("#main"),
+        aLi: $("#main li"),
+        len: $("#main li").size(),
+        imgList: $("#imgList"),
+        imgContainer: $("#imgList ul"),
+        animate: ["lightSpeedIn", "slideDown", "slideUp", "slideLeft", "slideRight",
+                  "slideExpandUp", "expandUp", "fadeIn", "expandOpen", "bigEntrance",
+                  "hatch", "bounce", "pulse", "floating", "pullUp", "pullDown",
+                  "stretchLeft", "stretchRight", "tada", "flip", "rubberBand", "zoomOutUp"] //22种动画效果。
+    }
+    
+    function setSize(iW, iH) {
+        data.aLi.width(iW).height(iH);
+        data.container.height(iH);
+    }
+    alert(data.imgContainer.find("li").height())
+    createImgList(dialogData[0].imgs);
+    setSize(data.iWidth, data.iHeight);
+    function createImgList(imgs) {
+        var len = imgs.length;
+        var html = "";
+        for (var i = 0; i < len; i++) {
+            html += "<li><img src=" + imgs[i] + " alt=''/></li>";
+        }
+        data.imgContainer.append(html);
+        var iNow = 0;
+        data.imgContainer.swipe("left", function (e,_this) {
+            iNow++;
+            if (iNow>=len-1) {
+                iNow = len - 1;
+            }
+            setTrans3d($(_this), [-iNow * data.iWidth + "px", 0, 0]);
+        }).swipe("right", function (e, _this) {
+            iNow--;
+            if (iNow<=0) {
+                iNow = 0;
+            }
+            setTrans3d($(_this), [-iNow * data.iWidth + "px", 0, 0]);
+        });
+
+        
+    }
+
+
+
+    function setTrans3d(obj, arr) {
+        if (arguments.length === 1) {
+            obj.css("-webkit-transform", "translate3d(0,0,0)");
+        }
+        else {
+            obj.css("-webkit-transform", "translate3d(" + arr[0] + "," + arr[1] + "," + arr[2] + ")");
+        }
+
+        return obj;
+
+    }
+
+    
+    
+
+
+  
+    $(document).on("touchmove", function () { return false;})
+ 
+
+});
