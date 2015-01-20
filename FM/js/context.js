@@ -22,7 +22,7 @@
             context.strokeStyle = color || "#f90";
             context.stroke();
         }
-    } //绘制椭圆
+    }
 
     CanvasRenderingContext2D.prototype.drawStar = function (x, y, r, num, type, rotation, color) {
         var angle = 360 / (num * 2);
@@ -53,9 +53,9 @@
         else {
             context.fill();
         }
-    } //绘制多边形，如五角星，六角星。。。N角星
+    }
 
-    CanvasRenderingContext2D.prototype.drawDetail = function (color) { // 
+    CanvasRenderingContext2D.prototype.drawDetail = function (color) {
         var context = this;
         context.strokeStyle = color || "#000";
         
@@ -102,7 +102,6 @@
         context.lineTo(27, 25);
         context.stroke();
     }
-
     CanvasRenderingContext2D.prototype.stackBlurImage = function (src, radius, blurAlphaChannel,fn) {//图片模糊特效。
         var img = new Image();
         var context = this;
@@ -160,7 +159,6 @@
                 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24,
                 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24,
                 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24];
-
         function stackBlurCanvasRGBA(cxt, top_x, top_y, width, height, radius) {
             if (isNaN(radius) || radius < 1) return;
             radius |= 0;

@@ -23,6 +23,7 @@
         audioName: $("#footer .title section"),
         audioList: $("#audio_list")
     }
+    $(document).on("touchmove", function (e) { e.preventDefault() });
 
     data.header.tap(function (e,_this) {//头部导航点击事件。
         var index = $(e.target).parent().index();
@@ -114,6 +115,7 @@
         data.found.find(".port .bigBanner li").width(iW);
         data.banner.find("li").width(iW);
         data.banner.width(iW * data.bannerLen);
+        data.audioList.find(".list_port").height(iH - 70);
     }
 
     /*=========================底部播放器============================*/
@@ -221,8 +223,11 @@
     data.footer.find(".detail").tap(function () {
         setTrans3d(data.audioList);
     });
-
-
+    data.audioList.tap(function (e,_this) {
+        if (e.target.className.indexOf('close')>-1) {
+            setTrans3d(data.audioList,[0,"100%",0]);
+        }
+    }); 
 
     function setTrans3d(obj, arr) {
         if (arguments.length === 1) {
@@ -238,11 +243,117 @@
 });
 
 (function () {
-    var myScroll;
-    function loaded() {
-        myScroll = new iScroll('wrapper');
+    var jingxuanScroll;
+    var audiuListScroll;
+    //function loaded() {
+    //    jingxuanScroll = new iScroll('wrapper', { hScroll: false });//发现－精选模块自定义的滚动条
+    //    audiuListScroll = new iScroll('list_port', {hScroll:false});//发现－精选模块自定义的滚动条
+    //}
+    var myScroll,
+	pullDownEl, pullDownOffset,
+	pullUpEl, pullUpOffset,
+	generatedCount = 0;
+
+    /**
+     * 下拉刷新 （自定义实现此方法）
+     * myScroll.refresh();		// 数据加载完成后，调用界面更新方法
+     */
+    function pullDownAction() {
+        setTimeout(function () {	// <-- Simulate network congestion, remove setTimeout from production!
+            var el, li, i;
+            el = document.getElementById('thelist');
+            
+            for (i = 0; i < 3; i++) {
+                li = document.createElement('li');
+                li.innerHTML = '<p class="title">宋小宝搞笑大全《中奖了》'+i+'</p><p class="timeline">时长：<span>49分3秒</span></p>';
+                el.insertBefore(li, el.childNodes[0]);
+            }
+            myScroll.refresh();		//数据加载完成后，调用界面更新方法   Remember to refresh when contents are loaded (ie: on ajax completion)
+        }, 1000);	// <-- Simulate network congestion, remove setTimeout from production!
+        //这里面的settimeout是用来模拟ajax加载数据等待的时间。
     }
-    window.addEventListener('load', loaded, false);
+
+    /**
+     * 滚动翻页 （自定义实现此方法）
+     * myScroll.refresh();		// 数据加载完成后，调用界面更新方法
+     */
+    function pullUpAction() {
+        setTimeout(function () {	// <-- Simulate network congestion, remove setTimeout from production!
+            var el, li, i;
+            el = document.getElementById('thelist');
+
+            for (i = 0; i < 3; i++) {
+                li = document.createElement('li');
+                li.innerHTML = '<p class="title">宋小宝搞笑大全《中奖了》' + i + '</p><p class="timeline">时长：<span>40分3秒</span></p>';
+                el.appendChild(li, el.childNodes[0]);
+            }
+
+            myScroll.refresh();		// 数据加载完成后，调用界面更新方法 Remember to refresh when contents are loaded (ie: on ajax completion)
+        }, 1000);	// <-- Simulate network congestion, remove setTimeout from production!
+    }
+
+    /**
+     * 初始化iScroll控件
+     */
+    function loaded() {
+        pullDownEl = document.getElementById('pullDown');
+        pullDownOffset = pullDownEl.offsetHeight;
+        pullUpEl = document.getElementById('pullUp');
+        pullUpOffset = pullUpEl.offsetHeight;
+
+        myScroll = new iScroll('list_port', {
+            scrollbarClass: 'myScrollbar', /* 重要样式 */
+            useTransition: false, /* 此属性不知用意，本人从true改为false */
+            topOffset: pullDownOffset,
+            onRefresh: function () {
+                if (pullDownEl.className.match('loading')) {
+                    pullDownEl.className = '';
+                    pullDownEl.querySelector('.pullDownLabel').innerHTML = '下拉刷新...';
+                } else if (pullUpEl.className.match('loading')) {
+                    pullUpEl.className = '';
+                    pullUpEl.querySelector('.pullUpLabel').innerHTML = '上拉加载更多...';
+                }
+            },
+            onScrollMove: function () {
+                if (this.y > 5 && !pullDownEl.className.match('flip')) {
+                    pullDownEl.className = 'flip';
+                    pullDownEl.querySelector('.pullDownLabel').innerHTML = '松手开始更新...';
+                    this.minScrollY = 0;
+                } else if (this.y < 5 && pullDownEl.className.match('flip')) {
+                    pullDownEl.className = '';
+                    pullDownEl.querySelector('.pullDownLabel').innerHTML = '下拉刷新...';
+                    this.minScrollY = -pullDownOffset;
+                } else if (this.y < (this.maxScrollY - 5) && !pullUpEl.className.match('flip')) {
+                    pullUpEl.className = 'flip';
+                    pullUpEl.querySelector('.pullUpLabel').innerHTML = '松手开始更新...';
+                    this.maxScrollY = this.maxScrollY;
+                } else if (this.y > (this.maxScrollY + 5) && pullUpEl.className.match('flip')) {
+                    pullUpEl.className = '';
+                    pullUpEl.querySelector('.pullUpLabel').innerHTML = '上拉加载更多...';
+                    this.maxScrollY = pullUpOffset;
+                }
+            },
+            onScrollEnd: function () {
+                if (pullDownEl.className.match('flip')) {
+                    pullDownEl.className = 'loading';
+                    pullDownEl.querySelector('.pullDownLabel').innerHTML = '加载中...';
+                    pullDownAction();	// Execute custom function (ajax call?)
+                } else if (pullUpEl.className.match('flip')) {
+                    pullUpEl.className = 'loading';
+                    pullUpEl.querySelector('.pullUpLabel').innerHTML = '加载中...';
+                    pullUpAction();	// Execute custom function (ajax call?)
+                }
+            }
+        });
+
+        setTimeout(function () { document.getElementById('list_port').style.left = '0'; }, 800);
+    }
+
+    //初始化绑定iScroll控件 
+    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+   // document.addEventListener('DOMContentLoaded', loaded, false);    
+     
+   window.addEventListener('load', loaded, false);
 })();
 
 
