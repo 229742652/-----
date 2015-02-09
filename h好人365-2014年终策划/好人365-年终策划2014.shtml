@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="<TRS_DOCUMENT field="DOCABSTRACT" ></TRS_DOCUMENT>" />
+	<meta name="keywords" content="<TRS_DOCUMENT field="DOCKEYWORDS" ></TRS_DOCUMENT>" />
+	<meta name="filetype" content="0" />
+	<meta name="publishedtype" content="1" />
+	<meta name="pagetype" content="2" />
+	<meta name="catalogs" content="<trs_channel field='channelid'/>">
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <title>中国文明网年终策划-中国文明网</title>
+    <link href="css/hr365-nzch2014-index.css" rel="stylesheet" />
+    <link href="css/nzch20150204.css" rel="stylesheet" />
+    <!--[if lte IE 8]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/hr365-nzch2014-selectivizr.js"></script>
+        <script src="js/hr365-nzch2014-media.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <div id="hidden"></div>
+	<div id="top">
+		<iframe width="980" scrolling="no" height="58" frameborder="0" target="_blank" hspace="0" vspace="0" marginheight="0" marginwidth="0" src="http://www.wenming.cn/gxym/public_bbs_top/zttbdy/"></iframe>
+	</div>
+    <canvas id="canvas"></canvas>
+    <section id="container" class="container">
+       
+        <div class="logo"><img draggable="false" src="http://images1.wenming.cn/web_wenming/images/hr365-nzch2014-logo.png" style="opacity:0;" alt="" /></div>
+        <div class="brand">
+            <div class="item"><img src="http://images1.wenming.cn/web_wenming/images/hr365-nzch2014-2.png" draggable="false" alt="" />  </div>
+            <div class="item"><img src="http://images1.wenming.cn/web_wenming/images/hr365-nzch2014-3.png" draggable="false" alt="" /></div>
+            <div class="item"><img src="http://images1.wenming.cn/web_wenming/images/hr365-nzch2014-7.png" draggable="false" alt="" /></div>
+            <div class="item"><img src="http://images1.wenming.cn/web_wenming/images/hr365-nzch2014-7-1.png" draggable="false" alt="" /></div>
+            <div class="item"><img src="http://images1.wenming.cn/web_wenming/images/hr365-nzch2014-4.png" draggable="false" alt="" /></div>
+            <div class="item"><img src="http://images1.wenming.cn/web_wenming/images/hr365-nzch2014-5.png" draggable="false" alt="" /></div>
+            <div class="item"><img src="http://images1.wenming.cn/web_wenming/images/hr365-nzch2014-6.png" draggable="false" alt="" /></div>
+            <ul>
+                  <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="column">
+            <ul>
+                <li>
+                    <div><img src="http://images1.wenming.cn/web_wenming/images/hr365-nzch2014-13.png" draggable="false" alt="" /></div>
+                    <div class="tag"><img src="http://images1.wenming.cn/web_wenming/images/hr365-nzch2014-8.png" draggable="false" alt="" /></div>
+                </li>
+                <li>
+                    <div><img src="http://images1.wenming.cn/web_wenming/images/hr365-nzch2014-14.png" draggable="false" alt="" /></div>
+                    <div class="tag"><img src="http://images1.wenming.cn/web_wenming/images/hr365-nzch2014-9.png" draggable="false" alt="" /></div>
+                </li>
+                <li>
+                    <div><img src="http://images1.wenming.cn/web_wenming/images/hr365-nzch2014-15.png" draggable="false" alt="" /></div>
+                    <div class="tag"><img src="http://images1.wenming.cn/web_wenming/images/hr365-nzch2014-10.png" draggable="false" alt="" /></div>
+                </li>
+                <li>
+                    <div><img src="http://images1.wenming.cn/web_wenming/images/hr365-nzch2014-16.png" draggable="false" alt="" /></div>
+                    <div class="tag"><img src="http://images1.wenming.cn/web_wenming/images/hr365-nzch2014-11.png" alt="" /></div>
+                </li>
+                <li>
+                    <div><img src="http://images1.wenming.cn/web_wenming/images/hr365-nzch2014-17.png" draggable="false" alt="" /></div>
+                    <div class="tag"><img src="http://images1.wenming.cn/web_wenming/images/hr365-nzch2014-12.png" draggable="false" alt="" /></div>
+                </li>
+            </ul>
+            <canvas class="border" id="border"></canvas>
+            <div class="comment content">
+                <article>
+                    <p class="title"><span class="close">×</span></p>
+                    <div class="news">
+                        <div class="content-box">
+                        <TRS_Documents ID="评论员" NUM="1" STARTPOS="0">
+                            <div class="news-title"><TRS_Document FIELD="docpeople" AUTOLINK="true" TARGET="_blank"></TRS_Document></div>
+                            <div class="news-time"><span>发表时间：<TRS_DOCUMENT field="DOCRELTIME"  dateformat="yyyy-MM-dd" ></TRS_DOCUMENT></span><span>来源：<TRS_DOCUMENT field="DOCSOURCENAME" ></TRS_DOCUMENT></span><span>责任编辑：<TRS_DOCUMENT field="DOCAUTHOR"></TRS_DOCUMENT></span></div>
+                            <div class="news-text"><TRS_Document FIELD="DOCABSTRACT" AUTOLINK="true" TARGET="_blank"></TRS_Document></div>
+                            <div class="more"><a href="<trs_document field='_recurl' />" target="_blank">阅读全文</a></div>
+                        </TRS_Documents>
+                        </div>
+                    
+                    </div>
+                </article>
+              
+            </div>
+            <div class="website content" hidden>
+                <article>
+                    <p class="title"><span class="close">×</span></p>
+                    <div class="news">
+                        <div class="content-box">
+                        <TRS_Documents ID="网站联盟" NUM="1" STARTPOS="0">
+                            <div class="news-title"><TRS_Document FIELD="docpeople" AUTOLINK="true" TARGET="_blank"></TRS_Document></div>
+                            <div class="news-time"><span>发表时间：<TRS_DOCUMENT field="DOCRELTIME"  dateformat="yyyy-MM-dd" ></TRS_DOCUMENT></span><span>来源：<TRS_DOCUMENT field="DOCSOURCENAME" ></TRS_DOCUMENT></span><span>责任编辑：<TRS_DOCUMENT field="DOCAUTHOR"></TRS_DOCUMENT></span></div>
+                            <div class="news-text"><TRS_Document FIELD="DOCABSTRACT" AUTOLINK="true" TARGET="_blank"></TRS_Document></div>
+                            <div class="more"><a href="<trs_document field='_recurl' />" target="_blank">阅读全文</a></div>
+                        </TRS_Documents>
+                        </div>
+                        <div class="content-box">
+                        <TRS_Documents ID="网站联盟" NUM="1" STARTPOS="1">
+                            <div class="news-title"><TRS_Document FIELD="docpeople" AUTOLINK="true" TARGET="_blank"></TRS_Document></div>
+                            <div class="news-time"><span>发表时间：<TRS_DOCUMENT field="DOCRELTIME"  dateformat="yyyy-MM-dd" ></TRS_DOCUMENT></span><span>来源：<TRS_DOCUMENT field="DOCSOURCENAME" ></TRS_DOCUMENT></span><span>责任编辑：<TRS_DOCUMENT field="DOCAUTHOR"></TRS_DOCUMENT></span></div>
+                            <div class="news-text"><TRS_Document FIELD="DOCABSTRACT" AUTOLINK="true" TARGET="_blank"></TRS_Document></div>
+                            <div class="more"><a href="<trs_document field='_recurl' />" target="_blank">阅读全文</a></div>
+                        </TRS_Documents>
+                        </div>
+                        <div class="content-box">
+                        <TRS_Documents ID="网站联盟" NUM="1" STARTPOS="2">
+                            <div class="news-title"><TRS_Document FIELD="docpeople" AUTOLINK="true" TARGET="_blank"></TRS_Document></div>
+                            <div class="news-time"><span>发表时间：<TRS_DOCUMENT field="DOCRELTIME"  dateformat="yyyy-MM-dd" ></TRS_DOCUMENT></span><span>来源：<TRS_DOCUMENT field="DOCSOURCENAME" ></TRS_DOCUMENT></span><span>责任编辑：<TRS_DOCUMENT field="DOCAUTHOR"></TRS_DOCUMENT></span></div>
+                            <div class="news-text"><TRS_Document FIELD="DOCABSTRACT" AUTOLINK="true" TARGET="_blank"></TRS_Document></div>
+                            <div class="more"><a href="<trs_document field='_recurl' />" target="_blank">阅读全文</a></div>
+                        </TRS_Documents>
+                        </div>
+                        <div class="content-box">
+                        <TRS_Documents ID="网站联盟" NUM="1" STARTPOS="3">
+                            <div class="news-title"><TRS_Document FIELD="docpeople" AUTOLINK="true" TARGET="_blank"></TRS_Document></div>
+                            <div class="news-time"><span>发表时间：<TRS_DOCUMENT field="DOCRELTIME"  dateformat="yyyy-MM-dd" ></TRS_DOCUMENT></span><span>来源：<TRS_DOCUMENT field="DOCSOURCENAME" ></TRS_DOCUMENT></span><span>责任编辑：<TRS_DOCUMENT field="DOCAUTHOR"></TRS_DOCUMENT></span></div>
+                            <div class="news-text"><TRS_Document FIELD="DOCABSTRACT" AUTOLINK="true" TARGET="_blank"></TRS_Document></div>
+                            <div class="more"><a href="<trs_document field='_recurl' />" target="_blank">阅读全文</a></div>
+                        </TRS_Documents>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="media content" hidden>
+                <article>
+                    <p class="title"><span class="close">×</span></p>
+                    <div class="news">
+                        <div class="content-box">
+                        <TRS_Documents ID="新媒体故事" NUM="1" STARTPOS="0">
+                            <div class="news-title"><TRS_Document FIELD="docpeople" AUTOLINK="true" TARGET="_blank"></TRS_Document></div>
+                            <div class="news-time"><span>发表时间：<TRS_DOCUMENT field="DOCRELTIME"  dateformat="yyyy-MM-dd" ></TRS_DOCUMENT></span><span>来源：<TRS_DOCUMENT field="DOCSOURCENAME" ></TRS_DOCUMENT></span><span>责任编辑：<TRS_DOCUMENT field="DOCAUTHOR"></TRS_DOCUMENT></span></div>
+                            <div class="news-text"><TRS_Document FIELD="DOCABSTRACT" AUTOLINK="true" TARGET="_blank"></TRS_Document></div>
+                            <div class="more"><a href="<trs_document field='_recurl' />" target="_blank">阅读全文</a></div>
+                        </TRS_Documents>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="friend content" hidden>
+                <article>
+                    <p class="title"><span class="close">×</span></p>
+                    <div class="news">
+                        <div class="content-box">
+                        <TRS_Documents ID="网友" NUM="1" STARTPOS="0">
+                            <div class="news-title"><TRS_Document FIELD="docpeople" AUTOLINK="true" TARGET="_blank"></TRS_Document></div>
+                            <div class="news-time"><span>发表时间：<TRS_DOCUMENT field="DOCRELTIME"  dateformat="yyyy-MM-dd" ></TRS_DOCUMENT></span><span>来源：<TRS_DOCUMENT field="DOCSOURCENAME" ></TRS_DOCUMENT></span><span>责任编辑：<TRS_DOCUMENT field="DOCAUTHOR"></TRS_DOCUMENT></span></div>
+                            <div class="news-text"><TRS_Document FIELD="DOCABSTRACT" AUTOLINK="true" TARGET="_blank"></TRS_Document></div>
+                            <div class="more"><a href="<trs_document field='_recurl' />" target="_blank">阅读全文</a></div>
+                        </TRS_Documents>
+                        </div>
+                        <div class="content-box">
+                        <TRS_Documents ID="网友" NUM="1" STARTPOS="1">
+                            <div class="news-title"><TRS_Document FIELD="docpeople" AUTOLINK="true" TARGET="_blank"></TRS_Document></div>
+                            <div class="news-time"><span>发表时间：<TRS_DOCUMENT field="DOCRELTIME"  dateformat="yyyy-MM-dd" ></TRS_DOCUMENT></span><span>来源：<TRS_DOCUMENT field="DOCSOURCENAME" ></TRS_DOCUMENT></span><span>责任编辑：<TRS_DOCUMENT field="DOCAUTHOR"></TRS_DOCUMENT></span></div>
+                            <div class="news-text"><TRS_Document FIELD="DOCABSTRACT" AUTOLINK="true" TARGET="_blank"></TRS_Document></div>
+                            <div class="more"><a href="<trs_document field='_recurl' />" target="_blank">阅读全文</a></div>
+                        </TRS_Documents>
+                        </div>
+                        <div class="content-box">
+                        <TRS_Documents ID="网友" NUM="1" STARTPOS="2">
+                            <div class="news-title"><TRS_Document FIELD="docpeople" AUTOLINK="true" TARGET="_blank"></TRS_Document></div>
+                            <div class="news-time"><span>发表时间：<TRS_DOCUMENT field="DOCRELTIME"  dateformat="yyyy-MM-dd" ></TRS_DOCUMENT></span><span>来源：<TRS_DOCUMENT field="DOCSOURCENAME" ></TRS_DOCUMENT></span><span>责任编辑：<TRS_DOCUMENT field="DOCAUTHOR"></TRS_DOCUMENT></span></div>
+                            <div class="news-text"><TRS_Document FIELD="DOCABSTRACT" AUTOLINK="true" TARGET="_blank"></TRS_Document></div>
+                            <div class="more"><a href="<trs_document field='_recurl' />" target="_blank">阅读全文</a></div>
+                        </TRS_Documents>
+                        </div>
+                        <div class="content-box">
+                        <TRS_Documents ID="网友" NUM="1" STARTPOS="3">
+                            <div class="news-title"><TRS_Document FIELD="docpeople" AUTOLINK="true" TARGET="_blank"></TRS_Document></div>
+                            <div class="news-time"><span>发表时间：<TRS_DOCUMENT field="DOCRELTIME"  dateformat="yyyy-MM-dd" ></TRS_DOCUMENT></span><span>来源：<TRS_DOCUMENT field="DOCSOURCENAME" ></TRS_DOCUMENT></span><span>责任编辑：<TRS_DOCUMENT field="DOCAUTHOR"></TRS_DOCUMENT></span></div>
+                            <div class="news-text"><TRS_Document FIELD="DOCABSTRACT" AUTOLINK="true" TARGET="_blank"></TRS_Document></div>
+                            <div class="more"><a href="<trs_document field='_recurl' />" target="_blank">阅读全文</a></div>
+                        </TRS_Documents>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="creator content" hidden>
+                <article>
+                    <p class="title"><span class="close">×</span></p>
+                    <div class="news">
+                        <div class="content-box">
+                        <TRS_Documents ID="栏目主创" NUM="1" STARTPOS="0">
+                            <div class="news-title"><TRS_Document FIELD="docpeople" AUTOLINK="true" TARGET="_blank"></TRS_Document></div>
+                            <div class="news-time"><span>发表时间：<TRS_DOCUMENT field="DOCRELTIME"  dateformat="yyyy-MM-dd" ></TRS_DOCUMENT></span><span>来源：<TRS_DOCUMENT field="DOCSOURCENAME" ></TRS_DOCUMENT></span><span>责任编辑：<TRS_DOCUMENT field="DOCAUTHOR"></TRS_DOCUMENT></span></div>
+                            <div class="news-text"><TRS_Document FIELD="DOCABSTRACT" AUTOLINK="true" TARGET="_blank"></TRS_Document></div>
+                            <div class="more"><a href="<trs_document field='_recurl' />" target="_blank">阅读全文</a></div>
+                        </TRS_Documents>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/lt-mobile-util.min.js"></script>
+    <script src="js/hr365-nzch2014-index-1.js"></script>
+    <div style="display:none;">
+	<script type="text/javascript" src="http://202.123.107.15/webdig.js?z=11"></script>
+	<script type="text/javascript">wd_paramtracker("_wdxid=000000000000000000000000000000000000000000")</script>
+</div>
+</body>
+</html>

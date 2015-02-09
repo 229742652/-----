@@ -1,0 +1,8 @@
+.news { padding: 60px; font-size: 14px; line-height: 30px;}
+.news-title { font-size: 28px; padding-left: 10px; line-height: 40px; height: 40px; border-left:10px solid #CC3333;}
+.news-time { color: #999; font-size: 12px;}
+.news-time span { padding: 0 20px;}
+.news-text { font-size: 16px; padding-top: 30px;}
+.news .more {  margin: 30px auto 60px; font-size: 16px; width: 100px; border:1px solid #CCC; padding: 8px 0; text-align:center; background: #F3F0F0;}
+.news .more a {  color: #666;}
+#top { position: absolute; top: 0;  z-index: 20; width: 980px; left:50%; margin-left:-490px; }
